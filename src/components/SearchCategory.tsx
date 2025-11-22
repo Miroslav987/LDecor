@@ -63,8 +63,8 @@ export default function SearchCategory() {
   if (loading || !categories.length) return null;
 
   return (
-    <div className={` w-full flex gap-[16px] my-[10px] md:my-[20px] overflow-hidden `}>
-      <ScrollContainer vertical={false} className='w-full py-[5px] flex gap-[16px] md:py-[0px]'>
+    <div className={` w-full  gap-[16px] my-[10px] md:my-[20px] overflow-hidden  container`}>
+      <ScrollContainer vertical={false} className='w-full  md:justify-center py-[5px] flex gap-[16px] md:py-[0px]'>
         {categories.map((cat, i) => {
           const isActive = currentCategory === cat;
 
