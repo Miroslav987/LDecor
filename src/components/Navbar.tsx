@@ -26,17 +26,17 @@ const NavBar = () => {
           <div className="my-[10px] md:my-[20px] flex gap-[24px] md:gap-[20px] md:justify-between items-center container">
             <Link href="/">
               <div onClick={closeModal} className="flex flex-col h-[54px] items-start lg:flex-row">
-                {/* <Image
+                <Image
                   src="/logo.svg"
-                  className="filter brightness-75 contrast-200"
+                  className="filter brightness-75 contrast-200 hidden md:block"
                   width={154}
                   height={54}
                   priority
                   alt="logo" 
-                /> */}
+                />
                 <Image
                   src="/logo.svg"
-                  className="filter brightness-75 contrast-200"
+                  className="filter brightness-75 contrast-200 block md:hidden"
                   width={120}
                   height={40}
                   priority
@@ -47,17 +47,17 @@ const NavBar = () => {
 
             <div className="gap-[24px] md:gap-[30px] flex items-center">
               <Link onClick={closeModal} href="/basket">
-                <button className="relative text-[16px] md:text-[20px] flex h-[40px] md:h-[54px] items-center rounded-[10px] bg-grey_first gap-[10px] px-[13px] md:px-[40px]">
+                <button className="relative text-[15px] md:text-[20px] flex h-[40px] md:h-[54px] items-center rounded-[10px] bg-grey_first gap-[10px] px-[13px] md:px-[40px]">
                   {basket.total_quantity ? (
                     <div className="absolute flex items-center justify-center w-[25px] h-[25px] right-[-5px] top-[-10px] rounded-[100px] bg-black">
                       <span className="pt-[3px] text-white">{basket.products.length}</span>
                     </div>
                   ) : null}
                   <svg
-                    width="15"
-                    height="15"
+                    width="17"
+                    height="17"
                     viewBox="0 0 28 28"
-                    className="mt-[-5px]"
+                    className="mt-[-2px]"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >

@@ -2,6 +2,7 @@
 
 import { Suspense, useEffect, useState } from "react";
 import ListCard from "../components/ListCard/ListCard";
+import SearchCategory from "@/components/SearchCategory";
 
 export type ProductType = {
   title: string;

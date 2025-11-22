@@ -63,11 +63,8 @@ export default function SearchCategory() {
   if (loading || !categories.length) return null;
 
   return (
-    <div className="my-[10px] md:my-[20px] w-full flex gap-[16px] overflow-hidden">
-      <ScrollContainer 
-        vertical={false} 
-        className="w-full pl-[50%] md:pl-0 py-[5px] flex justify-center gap-[16px] md:py-[0px] cursor-grab active:cursor-grabbing"
-      >
+    <div className={` w-full flex gap-[16px] my-[10px] md:my-[20px] overflow-hidden `}>
+      <ScrollContainer vertical={false} className='w-full py-[5px] flex gap-[16px] md:py-[0px]'>
         {categories.map((cat, i) => {
           const isActive = currentCategory === cat;
 
@@ -79,7 +76,7 @@ export default function SearchCategory() {
                 `
                   whitespace-nowrap
                   flex justify-center items-center
-                  md:py-[16px] md:px-[40px] h-[53px] rounded-[10px]
+                  md:py-[16px] md:px-[40px] h-[40px] md:h-[53px] rounded-[10px]
                   text-[16px] md:text-[20px] transition-all duration-200
                   shadow-[0_0_10px_0_#00000014]
                   border border-transparent
