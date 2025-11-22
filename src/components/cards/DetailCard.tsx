@@ -18,10 +18,12 @@ const DetailCard: FC<DetailCardProps> = ({ product }) => {
   const { AddBasketProduct } = useBasket();
   const [added, setAdded] = useState(false);
 
-  useEffect(() => {
-    const exists = basket.products.some((p: any) => p.id === product.id);
-    setAdded(exists);
-  }, [basket.products, product.id]);
+useEffect(() => {
+  const exists = basket?.products?.some?.((p: any) => p.id === product.id) ?? false;
+  setAdded(exists);
+}, [basket?.products, product.id]);
+
+  
 
   const handleAddToBasket = (e: React.MouseEvent) => {
     e.stopPropagation();
