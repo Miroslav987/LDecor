@@ -31,7 +31,7 @@ console.log(image);
   return (
     <div
       onClick={handleOpenModal}
-      className="relative flex items-center md:items-start md:flex-col justify-between 
+      className="relative flex gap-[10px] md:gap-0 items-center md:items-start md:flex-col justify-start 
                  w-full md:h-[277px] p-[15px] rounded-[10px] bg-white 
                  shadow-[0_0_10px_0_#00000014] cursor-pointer"
     >
@@ -57,7 +57,7 @@ console.log(image);
 
 
       {image && (
-        <div className="flex rounded-xl  justify-center">
+        <div className="min-w-[210px] md:w-full flex rounded-xl  justify-start">
           <Image
             src={image}
             width={210}
