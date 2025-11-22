@@ -47,7 +47,7 @@ const DetailCard: FC<DetailCardProps> = ({ product }) => {
 
   return (
     <>
-      {product ? (
+      {product?.imgs?.[0] ? (
         <div className="relative w-[80%] h-[80%] rounded-[10px] bg-white p-[30px] shadow-[0_0_10px_0_#00000014]">
           <button
             onClick={closeModal}

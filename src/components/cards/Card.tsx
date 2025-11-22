@@ -26,7 +26,6 @@ export default function Card({ product }: any) {
   };
 
   const image = product?.imgs?.[0];
-console.log(image);
 
   return (
     <div

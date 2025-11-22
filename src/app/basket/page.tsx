@@ -24,7 +24,6 @@ export default function Basket() {
   }
   useEffect(()=>{
     AllPriceProducts(totalPrice)
-    console.log(basket);
     
   },[totalPrice])
 
@@ -35,7 +34,6 @@ export default function Basket() {
   if (!client) {
     return null;
   }
-  console.log(basket);
   
 
   return (
